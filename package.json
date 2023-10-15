@@ -92,7 +92,10 @@
     "concurrently": "^5.0.0",
     "dotenv-cli": "^5.1.0",
     "husky": "^4.2.3",
-    "jest-html-reporter": "^3.0.0"
+    "jest-html-reporter": "^3.0.0",
+    "typedoc": "^0.22.18",
+    "typedoc-plugin-merge-modules": "^4.0.0",
+    "typedoc-plugin-missing-exports": "^0.22.6"
   },
   "jest": {
     "testEnvironment": "node",
