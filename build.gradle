@@ -1,3 +1,17 @@
 plugins {
   id "com.github.node-gradle.node" version "7.0.0"
 }
+
+task clear(type: NpxTask) {
+  command = 'rimraf'
+  args  = ['./dist']
+}
+
+task build(type: NpxTask) {
+  dependsOn clear
+  command = 'tsc'
+}
+
+task docs_generation(type: NpxTask) {
+  command = 'typedoc'
+}
