@@ -4,17 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Post | ddd-forum</title>
-	<meta name="description" content="Documentation for ddd-forum">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -41,6 +40,8 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -52,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">ddd-forum</a>
+					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
 					<a href="post.html">Post</a>
@@ -69,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="aggregateroot.html" class="tsd-signature-type" data-tsd-kind="Class">AggregateRoot</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="aggregateroot.html" class="tsd-signature-type">AggregateRoot</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">Post</span>
@@ -145,26 +146,26 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Post<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a>, id<span class="tsd-signature-symbol">?: </span><a href="uniqueentityid.html" class="tsd-signature-type" data-tsd-kind="Class">UniqueEntityID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="post.html" class="tsd-signature-type" data-tsd-kind="Class">Post</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Post<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a>, id<span class="tsd-signature-symbol">?: </span><a href="uniqueentityid.html" class="tsd-signature-type">UniqueEntityID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="post.html" class="tsd-signature-type">Post</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#constructor">constructor</a></p>
+								<p>Overrides <a href="entity.html">Entity</a>.<a href="entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L193">src/modules/forum/domain/post.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L193">src/modules/forum/domain/post.ts:193</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a></h5>
+									<h5>props: <a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <a href="uniqueentityid.html" class="tsd-signature-type" data-tsd-kind="Class">UniqueEntityID</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <a href="uniqueentityid.html" class="tsd-signature-type">UniqueEntityID</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="post.html" class="tsd-signature-type" data-tsd-kind="Class">Post</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="post.html" class="tsd-signature-type">Post</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -173,23 +174,23 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _id</h3>
-					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <a href="uniqueentityid.html" class="tsd-signature-type" data-tsd-kind="Class">UniqueEntityID</a></div>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _id</h3>
+					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <a href="uniqueentityid.html" class="tsd-signature-type">UniqueEntityID</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#_id">_id</a></p>
+						<p>Inherited from <a href="entity.html">Entity</a>.<a href="entity.html#_id">_id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/domain/Entity.ts#L9">src/shared/domain/Entity.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/domain/Entity.ts#L9">src/shared/domain/Entity.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="props" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> props</h3>
-					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a></div>
+					<h3>props</h3>
+					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#props">props</a></p>
+						<p>Inherited from <a href="entity.html">Entity</a>.<a href="entity.html#props">props</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/domain/Entity.ts#L10">src/shared/domain/Entity.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/domain/Entity.ts#L10">src/shared/domain/Entity.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,16 +201,16 @@
 					<a name="comments" class="tsd-anchor"></a>
 					<h3>comments</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> comments<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="comments.html" class="tsd-signature-type" data-tsd-kind="Class">Comments</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> comments<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="comments.html" class="tsd-signature-type">Comments</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L68">src/modules/forum/domain/post.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L68">src/modules/forum/domain/post.ts:68</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="comments.html" class="tsd-signature-type" data-tsd-kind="Class">Comments</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="comments.html" class="tsd-signature-type">Comments</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -223,7 +224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L64">src/modules/forum/domain/post.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L64">src/modules/forum/domain/post.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></h4>
@@ -234,16 +235,17 @@
 					<a name="domainevents" class="tsd-anchor"></a>
 					<h3>domain<wbr>Events</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> domainEvents<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/idomainevent.html" class="tsd-signature-type" data-tsd-kind="Interface">IDomainEvent</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> domainEvents<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/idomainevent.html" class="tsd-signature-type">IDomainEvent</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#domainevents">domainEvents</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/domain/AggregateRoot.ts#L14">src/shared/domain/AggregateRoot.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/domain/AggregateRoot.ts#L14">src/shared/domain/AggregateRoot.ts:14</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/idomainevent.html" class="tsd-signature-type" data-tsd-kind="Interface">IDomainEvent</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/idomainevent.html" class="tsd-signature-type">IDomainEvent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -251,16 +253,17 @@
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="uniqueentityid.html" class="tsd-signature-type" data-tsd-kind="Class">UniqueEntityID</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="uniqueentityid.html" class="tsd-signature-type">UniqueEntityID</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#id">id</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/domain/AggregateRoot.ts#L10">src/shared/domain/AggregateRoot.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/domain/AggregateRoot.ts#L10">src/shared/domain/AggregateRoot.ts:10</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="uniqueentityid.html" class="tsd-signature-type" data-tsd-kind="Class">UniqueEntityID</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="uniqueentityid.html" class="tsd-signature-type">UniqueEntityID</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -268,16 +271,16 @@
 					<a name="link" class="tsd-anchor"></a>
 					<h3>link</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> link<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postlink.html" class="tsd-signature-type" data-tsd-kind="Class">PostLink</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> link<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postlink.html" class="tsd-signature-type">PostLink</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L76">src/modules/forum/domain/post.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L76">src/modules/forum/domain/post.ts:76</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="postlink.html" class="tsd-signature-type" data-tsd-kind="Class">PostLink</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="postlink.html" class="tsd-signature-type">PostLink</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -285,16 +288,16 @@
 					<a name="memberid" class="tsd-anchor"></a>
 					<h3>member<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> memberId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="memberid.html" class="tsd-signature-type" data-tsd-kind="Class">MemberId</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> memberId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="memberid.html" class="tsd-signature-type">MemberId</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L52">src/modules/forum/domain/post.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L52">src/modules/forum/domain/post.ts:52</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="memberid.html" class="tsd-signature-type" data-tsd-kind="Class">MemberId</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="memberid.html" class="tsd-signature-type">MemberId</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L72">src/modules/forum/domain/post.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L72">src/modules/forum/domain/post.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -319,16 +322,16 @@
 					<a name="postid" class="tsd-anchor"></a>
 					<h3>post<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> postId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postid.html" class="tsd-signature-type" data-tsd-kind="Class">PostId</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> postId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postid.html" class="tsd-signature-type">PostId</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L47">src/modules/forum/domain/post.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L47">src/modules/forum/domain/post.ts:47</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="postid.html" class="tsd-signature-type" data-tsd-kind="Class">PostId</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="postid.html" class="tsd-signature-type">PostId</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -336,16 +339,16 @@
 					<a name="slug" class="tsd-anchor"></a>
 					<h3>slug</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> slug<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postslug.html" class="tsd-signature-type" data-tsd-kind="Class">PostSlug</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> slug<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postslug.html" class="tsd-signature-type">PostSlug</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L60">src/modules/forum/domain/post.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L60">src/modules/forum/domain/post.ts:60</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="postslug.html" class="tsd-signature-type" data-tsd-kind="Class">PostSlug</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="postslug.html" class="tsd-signature-type">PostSlug</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -353,16 +356,16 @@
 					<a name="text" class="tsd-anchor"></a>
 					<h3>text</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> text<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="posttext.html" class="tsd-signature-type" data-tsd-kind="Class">PostText</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> text<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="posttext.html" class="tsd-signature-type">PostText</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L80">src/modules/forum/domain/post.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L80">src/modules/forum/domain/post.ts:80</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="posttext.html" class="tsd-signature-type" data-tsd-kind="Class">PostText</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="posttext.html" class="tsd-signature-type">PostText</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -370,16 +373,16 @@
 					<a name="title" class="tsd-anchor"></a>
 					<h3>title</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> title<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="posttitle.html" class="tsd-signature-type" data-tsd-kind="Class">PostTitle</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> title<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="posttitle.html" class="tsd-signature-type">PostTitle</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L56">src/modules/forum/domain/post.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L56">src/modules/forum/domain/post.ts:56</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="posttitle.html" class="tsd-signature-type" data-tsd-kind="Class">PostTitle</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="posttitle.html" class="tsd-signature-type">PostTitle</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -393,7 +396,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L88">src/modules/forum/domain/post.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L88">src/modules/forum/domain/post.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -404,16 +407,16 @@
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#posttype" class="tsd-signature-type" data-tsd-kind="Type alias">PostType</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#posttype" class="tsd-signature-type">PostType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L84">src/modules/forum/domain/post.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L84">src/modules/forum/domain/post.ts:84</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules.html#posttype" class="tsd-signature-type" data-tsd-kind="Type alias">PostType</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#posttype" class="tsd-signature-type">PostType</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -424,22 +427,22 @@
 					<a name="addcomment" class="tsd-anchor"></a>
 					<h3>add<wbr>Comment</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Comment<span class="tsd-signature-symbol">(</span>comment<span class="tsd-signature-symbol">: </span><a href="comment.html" class="tsd-signature-type" data-tsd-kind="Class">Comment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Comment<span class="tsd-signature-symbol">(</span>comment<span class="tsd-signature-symbol">: </span><a href="comment.html" class="tsd-signature-type">Comment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L168">src/modules/forum/domain/post.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L168">src/modules/forum/domain/post.ts:168</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>comment: <a href="comment.html" class="tsd-signature-type" data-tsd-kind="Class">Comment</a></h5>
+									<h5>comment: <a href="comment.html" class="tsd-signature-type">Comment</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -447,20 +450,20 @@
 					<a name="adddomainevent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> add<wbr>Domain<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Domain<wbr>Event<span class="tsd-signature-symbol">(</span>domainEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/idomainevent.html" class="tsd-signature-type" data-tsd-kind="Interface">IDomainEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Domain<wbr>Event<span class="tsd-signature-symbol">(</span>domainEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/idomainevent.html" class="tsd-signature-type">IDomainEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#adddomainevent">addDomainEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/domain/AggregateRoot.ts#L18">src/shared/domain/AggregateRoot.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/domain/AggregateRoot.ts#L18">src/shared/domain/AggregateRoot.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>domainEvent: <a href="../interfaces/idomainevent.html" class="tsd-signature-type" data-tsd-kind="Interface">IDomainEvent</a></h5>
+									<h5>domainEvent: <a href="../interfaces/idomainevent.html" class="tsd-signature-type">IDomainEvent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -471,22 +474,22 @@
 					<a name="addvote" class="tsd-anchor"></a>
 					<h3>add<wbr>Vote</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Vote<span class="tsd-signature-symbol">(</span>vote<span class="tsd-signature-symbol">: </span><a href="postvote.html" class="tsd-signature-type" data-tsd-kind="Class">PostVote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Vote<span class="tsd-signature-symbol">(</span>vote<span class="tsd-signature-symbol">: </span><a href="postvote.html" class="tsd-signature-type">PostVote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L150">src/modules/forum/domain/post.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L150">src/modules/forum/domain/post.ts:150</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>vote: <a href="postvote.html" class="tsd-signature-type" data-tsd-kind="Class">PostVote</a></h5>
+									<h5>vote: <a href="postvote.html" class="tsd-signature-type">PostVote</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -501,7 +504,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#clearevents">clearEvents</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/domain/AggregateRoot.ts#L28">src/shared/domain/AggregateRoot.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/domain/AggregateRoot.ts#L28">src/shared/domain/AggregateRoot.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -512,20 +515,20 @@
 					<a name="equals" class="tsd-anchor"></a>
 					<h3>equals</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">?: </span><a href="entity.html" class="tsd-signature-type" data-tsd-kind="Class">Entity</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">?: </span><a href="entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="aggregateroot.html">AggregateRoot</a>.<a href="aggregateroot.html#equals">equals</a></p>
+								<p>Inherited from <a href="entity.html">Entity</a>.<a href="entity.html#equals">equals</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/domain/Entity.ts#L17">src/shared/domain/Entity.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/domain/Entity.ts#L17">src/shared/domain/Entity.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> object: <a href="entity.html" class="tsd-signature-type" data-tsd-kind="Class">Entity</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> object: <a href="entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -536,16 +539,16 @@
 					<a name="getvotes" class="tsd-anchor"></a>
 					<h3>get<wbr>Votes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Votes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postvotes.html" class="tsd-signature-type" data-tsd-kind="Class">PostVotes</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Votes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="postvotes.html" class="tsd-signature-type">PostVotes</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L191">src/modules/forum/domain/post.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L191">src/modules/forum/domain/post.ts:191</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="postvotes.html" class="tsd-signature-type" data-tsd-kind="Class">PostVotes</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="postvotes.html" class="tsd-signature-type">PostVotes</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -559,7 +562,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L98">src/modules/forum/domain/post.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L98">src/modules/forum/domain/post.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -576,7 +579,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L183">src/modules/forum/domain/post.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L183">src/modules/forum/domain/post.ts:183</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -593,7 +596,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L187">src/modules/forum/domain/post.ts:187</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L187">src/modules/forum/domain/post.ts:187</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -604,19 +607,19 @@
 					<a name="removecommentifexists" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> remove<wbr>Comment<wbr>IfExists</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Comment<wbr>IfExists<span class="tsd-signature-symbol">(</span>comment<span class="tsd-signature-symbol">: </span><a href="comment.html" class="tsd-signature-type" data-tsd-kind="Class">Comment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Comment<wbr>IfExists<span class="tsd-signature-symbol">(</span>comment<span class="tsd-signature-symbol">: </span><a href="comment.html" class="tsd-signature-type">Comment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L162">src/modules/forum/domain/post.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L162">src/modules/forum/domain/post.ts:162</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>comment: <a href="comment.html" class="tsd-signature-type" data-tsd-kind="Class">Comment</a></h5>
+									<h5>comment: <a href="comment.html" class="tsd-signature-type">Comment</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -627,22 +630,22 @@
 					<a name="removevote" class="tsd-anchor"></a>
 					<h3>remove<wbr>Vote</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Vote<span class="tsd-signature-symbol">(</span>vote<span class="tsd-signature-symbol">: </span><a href="postvote.html" class="tsd-signature-type" data-tsd-kind="Class">PostVote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Vote<span class="tsd-signature-symbol">(</span>vote<span class="tsd-signature-symbol">: </span><a href="postvote.html" class="tsd-signature-type">PostVote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L156">src/modules/forum/domain/post.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L156">src/modules/forum/domain/post.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>vote: <a href="postvote.html" class="tsd-signature-type" data-tsd-kind="Class">PostVote</a></h5>
+									<h5>vote: <a href="postvote.html" class="tsd-signature-type">PostVote</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -650,22 +653,22 @@
 					<a name="updatecomment" class="tsd-anchor"></a>
 					<h3>update<wbr>Comment</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Comment<span class="tsd-signature-symbol">(</span>comment<span class="tsd-signature-symbol">: </span><a href="comment.html" class="tsd-signature-type" data-tsd-kind="Class">Comment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Comment<span class="tsd-signature-symbol">(</span>comment<span class="tsd-signature-symbol">: </span><a href="comment.html" class="tsd-signature-type">Comment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L176">src/modules/forum/domain/post.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L176">src/modules/forum/domain/post.ts:176</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>comment: <a href="comment.html" class="tsd-signature-type" data-tsd-kind="Class">Comment</a></h5>
+									<h5>comment: <a href="comment.html" class="tsd-signature-type">Comment</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -673,22 +676,22 @@
 					<a name="updatelink" class="tsd-anchor"></a>
 					<h3>update<wbr>Link</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Link<span class="tsd-signature-symbol">(</span>postLink<span class="tsd-signature-symbol">: </span><a href="postlink.html" class="tsd-signature-type" data-tsd-kind="Class">PostLink</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#either" class="tsd-signature-type" data-tsd-kind="Type alias">Either</a><span class="tsd-signature-symbol">&lt;</span><a href="editposterrors.invalidposttypeoperationerror.html" class="tsd-signature-type" data-tsd-kind="Class">InvalidPostTypeOperationError</a><span class="tsd-signature-symbol"> | </span><a href="editposterrors.postsealederror.html" class="tsd-signature-type" data-tsd-kind="Class">PostSealedError</a><span class="tsd-signature-symbol"> | </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Link<span class="tsd-signature-symbol">(</span>postLink<span class="tsd-signature-symbol">: </span><a href="postlink.html" class="tsd-signature-type">PostLink</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#updatepostorlinkresult" class="tsd-signature-type">UpdatePostOrLinkResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L121">src/modules/forum/domain/post.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L121">src/modules/forum/domain/post.ts:121</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>postLink: <a href="postlink.html" class="tsd-signature-type" data-tsd-kind="Class">PostLink</a></h5>
+									<h5>postLink: <a href="postlink.html" class="tsd-signature-type">PostLink</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules.html#either" class="tsd-signature-type" data-tsd-kind="Type alias">Either</a><span class="tsd-signature-symbol">&lt;</span><a href="editposterrors.invalidposttypeoperationerror.html" class="tsd-signature-type" data-tsd-kind="Class">InvalidPostTypeOperationError</a><span class="tsd-signature-symbol"> | </span><a href="editposterrors.postsealederror.html" class="tsd-signature-type" data-tsd-kind="Class">PostSealedError</a><span class="tsd-signature-symbol"> | </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#updatepostorlinkresult" class="tsd-signature-type">UpdatePostOrLinkResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -702,7 +705,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L140">src/modules/forum/domain/post.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L140">src/modules/forum/domain/post.ts:140</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -728,22 +731,22 @@
 					<a name="updatetext" class="tsd-anchor"></a>
 					<h3>update<wbr>Text</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Text<span class="tsd-signature-symbol">(</span>postText<span class="tsd-signature-symbol">: </span><a href="posttext.html" class="tsd-signature-type" data-tsd-kind="Class">PostText</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#either" class="tsd-signature-type" data-tsd-kind="Type alias">Either</a><span class="tsd-signature-symbol">&lt;</span><a href="editposterrors.invalidposttypeoperationerror.html" class="tsd-signature-type" data-tsd-kind="Class">InvalidPostTypeOperationError</a><span class="tsd-signature-symbol"> | </span><a href="editposterrors.postsealederror.html" class="tsd-signature-type" data-tsd-kind="Class">PostSealedError</a><span class="tsd-signature-symbol"> | </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Text<span class="tsd-signature-symbol">(</span>postText<span class="tsd-signature-symbol">: </span><a href="posttext.html" class="tsd-signature-type">PostText</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#updatepostorlinkresult" class="tsd-signature-type">UpdatePostOrLinkResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L102">src/modules/forum/domain/post.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L102">src/modules/forum/domain/post.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>postText: <a href="posttext.html" class="tsd-signature-type" data-tsd-kind="Class">PostText</a></h5>
+									<h5>postText: <a href="posttext.html" class="tsd-signature-type">PostText</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules.html#either" class="tsd-signature-type" data-tsd-kind="Type alias">Either</a><span class="tsd-signature-symbol">&lt;</span><a href="editposterrors.invalidposttypeoperationerror.html" class="tsd-signature-type" data-tsd-kind="Class">InvalidPostTypeOperationError</a><span class="tsd-signature-symbol"> | </span><a href="editposterrors.postsealederror.html" class="tsd-signature-type" data-tsd-kind="Class">PostSealedError</a><span class="tsd-signature-symbol"> | </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#updatepostorlinkresult" class="tsd-signature-type">UpdatePostOrLinkResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -757,7 +760,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L92">src/modules/forum/domain/post.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L92">src/modules/forum/domain/post.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -774,25 +777,25 @@
 					<a name="create" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a>, id<span class="tsd-signature-symbol">?: </span><a href="uniqueentityid.html" class="tsd-signature-type" data-tsd-kind="Class">UniqueEntityID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="post.html" class="tsd-signature-type" data-tsd-kind="Class">Post</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a>, id<span class="tsd-signature-symbol">?: </span><a href="uniqueentityid.html" class="tsd-signature-type">UniqueEntityID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="post.html" class="tsd-signature-type">Post</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L205">src/modules/forum/domain/post.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L205">src/modules/forum/domain/post.ts:205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="../interfaces/postprops.html" class="tsd-signature-type" data-tsd-kind="Interface">PostProps</a></h5>
+									<h5>props: <a href="../interfaces/postprops.html" class="tsd-signature-type">PostProps</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <a href="uniqueentityid.html" class="tsd-signature-type" data-tsd-kind="Class">UniqueEntityID</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> id: <a href="uniqueentityid.html" class="tsd-signature-type">UniqueEntityID</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="post.html" class="tsd-signature-type" data-tsd-kind="Class">Post</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="post.html" class="tsd-signature-type">Post</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -806,7 +809,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/domain/post.ts#L199">src/modules/forum/domain/post.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/domain/post.ts#L199">src/modules/forum/domain/post.ts:199</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -824,8 +827,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" ">
-						<a href="../modules.html">Exports</a>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 				</ul>
 			</nav>
@@ -952,29 +955,57 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
@@ -984,5 +1015,6 @@
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

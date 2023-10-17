@@ -1,7 +1,6 @@
 {
-    "$schema": "https://typedoc.org/schema.json",
-    "plugin": ["typedoc-plugin-merge-modules"],
-    "entryPoints": ["./src/"],
+    "inputFiles": ["./src/"],
     "exclude": ["**/*.spec.ts"],
+    "mode": "file",
     "out": "docs/generated"
 }

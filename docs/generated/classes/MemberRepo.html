@@ -4,17 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>MemberRepo | ddd-forum</title>
-	<meta name="description" content="Documentation for ddd-forum">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -41,6 +40,8 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -52,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">ddd-forum</a>
+					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
 					<a href="memberrepo.html">MemberRepo</a>
@@ -76,7 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/imemberrepo.html" class="tsd-signature-type" data-tsd-kind="Interface">IMemberRepo</a></li>
+					<li><a href="../interfaces/imemberrepo.html" class="tsd-signature-type">IMemberRepo</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -117,13 +118,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Member<wbr>Repo<span class="tsd-signature-symbol">(</span>models<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="memberrepo.html" class="tsd-signature-type" data-tsd-kind="Class">MemberRepo</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Member<wbr>Repo<span class="tsd-signature-symbol">(</span>models<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="memberrepo.html" class="tsd-signature-type">MemberRepo</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L13">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L13">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -132,7 +133,7 @@
 									<h5>models: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="memberrepo.html" class="tsd-signature-type" data-tsd-kind="Class">MemberRepo</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="memberrepo.html" class="tsd-signature-type">MemberRepo</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -145,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">models<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L13">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L13">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L19">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L19">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -180,7 +181,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/imemberrepo.html">IMemberRepo</a>.<a href="../interfaces/imemberrepo.html#exists">exists</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L29">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L29">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -197,14 +198,14 @@
 					<a name="getmemberbyuserid" class="tsd-anchor"></a>
 					<h3>get<wbr>Member<wbr>ByUser<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Id<span class="tsd-signature-symbol">(</span>userId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type" data-tsd-kind="Class">Member</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Id<span class="tsd-signature-symbol">(</span>userId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type">Member</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/imemberrepo.html">IMemberRepo</a>.<a href="../interfaces/imemberrepo.html#getmemberbyuserid">getMemberByUserId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L70">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L70">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -213,7 +214,7 @@
 									<h5>userId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type" data-tsd-kind="Class">Member</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type">Member</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -221,14 +222,14 @@
 					<a name="getmemberbyusername" class="tsd-anchor"></a>
 					<h3>get<wbr>Member<wbr>ByUser<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Name<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type" data-tsd-kind="Class">Member</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Name<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type">Member</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/imemberrepo.html">IMemberRepo</a>.<a href="../interfaces/imemberrepo.html#getmemberbyusername">getMemberByUserName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L80">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L80">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -237,7 +238,7 @@
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type" data-tsd-kind="Class">Member</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="member.html" class="tsd-signature-type">Member</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -245,14 +246,14 @@
 					<a name="getmemberdetailsbypostlinkorslug" class="tsd-anchor"></a>
 					<h3>get<wbr>Member<wbr>Details<wbr>ByPost<wbr>Link<wbr>OrSlug</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>Details<wbr>ByPost<wbr>Link<wbr>OrSlug<span class="tsd-signature-symbol">(</span>linkOrSlug<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type" data-tsd-kind="Class">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>Details<wbr>ByPost<wbr>Link<wbr>OrSlug<span class="tsd-signature-symbol">(</span>linkOrSlug<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/imemberrepo.html">IMemberRepo</a>.<a href="../interfaces/imemberrepo.html#getmemberdetailsbypostlinkorslug">getMemberDetailsByPostLinkOrSlug</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L38">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L38">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -261,7 +262,7 @@
 									<h5>linkOrSlug: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type" data-tsd-kind="Class">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -269,14 +270,14 @@
 					<a name="getmemberdetailsbyusername" class="tsd-anchor"></a>
 					<h3>get<wbr>Member<wbr>Details<wbr>ByUser<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>Details<wbr>ByUser<wbr>Name<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type" data-tsd-kind="Class">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>Details<wbr>ByUser<wbr>Name<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/imemberrepo.html">IMemberRepo</a>.<a href="../interfaces/imemberrepo.html#getmemberdetailsbyusername">getMemberDetailsByUserName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L92">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L92">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,7 +286,7 @@
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type" data-tsd-kind="Class">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberdetails.html" class="tsd-signature-type">MemberDetails</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -293,14 +294,14 @@
 					<a name="getmemberidbyuserid" class="tsd-anchor"></a>
 					<h3>get<wbr>Member<wbr>IdBy<wbr>User<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>IdBy<wbr>User<wbr>Id<span class="tsd-signature-symbol">(</span>userId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberid.html" class="tsd-signature-type" data-tsd-kind="Class">MemberId</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Member<wbr>IdBy<wbr>User<wbr>Id<span class="tsd-signature-symbol">(</span>userId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberid.html" class="tsd-signature-type">MemberId</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/imemberrepo.html">IMemberRepo</a>.<a href="../interfaces/imemberrepo.html#getmemberidbyuserid">getMemberIdByUserId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L60">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L60">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -309,7 +310,7 @@
 									<h5>userId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberid.html" class="tsd-signature-type" data-tsd-kind="Class">MemberId</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="memberid.html" class="tsd-signature-type">MemberId</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -317,20 +318,20 @@
 					<a name="save" class="tsd-anchor"></a>
 					<h3>save</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">save<span class="tsd-signature-symbol">(</span>member<span class="tsd-signature-symbol">: </span><a href="member.html" class="tsd-signature-type" data-tsd-kind="Class">Member</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<span class="tsd-signature-symbol">(</span>member<span class="tsd-signature-symbol">: </span><a href="member.html" class="tsd-signature-type">Member</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/imemberrepo.html">IMemberRepo</a>.<a href="../interfaces/imemberrepo.html#save">save</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L104">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/repos/implementations/sequelizeMemberRepo.ts#L104">src/modules/forum/repos/implementations/sequelizeMemberRepo.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>member: <a href="member.html" class="tsd-signature-type" data-tsd-kind="Class">Member</a></h5>
+									<h5>member: <a href="member.html" class="tsd-signature-type">Member</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -342,8 +343,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" ">
-						<a href="../modules.html">Exports</a>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 				</ul>
 			</nav>
@@ -398,29 +399,57 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
@@ -430,5 +459,6 @@
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

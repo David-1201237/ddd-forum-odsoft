@@ -4,17 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>ddd-forum</title>
-	<meta name="description" content="Documentation for ddd-forum">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -41,6 +40,8 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -50,6 +51,11 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
 			<h1>ddd-forum</h1>
 		</div>
 	</div>
@@ -58,253 +64,81 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p align="center">
-					<img src="https://user-images.githubusercontent.com/6892666/67032637-fc237200-f0e1-11e9-8a46-f5d655e71962.png"/>
-				</p>
-				<h1 align="center">DDDForum.com</h1>
-				<p align="center">
-					<a href="https://circleci.com/gh/stemmlerjs/ddd-forum"><img src="https://circleci.com/gh/circleci/circleci-docs.svg?style=svg"></a>
-					<a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square"></a>
-				</p>
+				<a href="#user-use-cases" id="user-use-cases" style="color: inherit; text-decoration: none;">
+					<h1>User Use Cases</h1>
+				</a>
 				<blockquote>
-					<p>A <a href="https://khalilstemmler.com/articles/solid-principles/solid-typescript/">SOLID</a> hackernews-inspired forum site built with TypeScript using the <a href="https://khalilstemmler.com/articles/software-design-architecture/organizing-app-logic/">clean architecture</a> and <a href="https://khalilstemmler.com/articles/domain-driven-design-intro/">DDD best practices</a>.</p>
+					<p>This is where all the use cases (application services) for the users subdomain belongs </p>
 				</blockquote>
-				<p><img src="https://user-images.githubusercontent.com/6892666/67032446-9931db00-f0e1-11e9-894d-7bccd240c851.png" alt="DDDForum"></p>
-				<a href="#about" id="about" style="color: inherit; text-decoration: none;">
-					<h2>About</h2>
-				</a>
-				<p>DDDForum.com is the application that we build in <a href="https://solidbook.io">solidbook.io - The Software Design and Architecture Handbook</a>. </p>
-				<a href="#team39s-project-technical-documentation" id="team39s-project-technical-documentation" style="color: inherit; text-decoration: none;">
-					<h2>Team&#39;s Project Technical Documentation</h2>
-				</a>
-				<p>You may find a template for the project technical documentation in <a href="docs/readme.md">docs/readme.md</a>
-				You should follow this examples as a template for your own work.</p>
-				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
-					<h2>Documentation</h2>
-				</a>
-				<p><a href="README-original.md">Original Readme file</a></p>
-				<p><a href="README-dyarleniber.md">Readme file from dyarleniber</a></p>
-				<a href="#running-the-project" id="running-the-project" style="color: inherit; text-decoration: none;">
-					<h2>Running the project</h2>
-				</a>
-				<ol>
-					<li>Install and start <a href="https://docs.docker.com/compose/gettingstarted/">Docker</a> if you haven&#39;t already.</li>
-					<li>Copy the <code>.env</code> template file. Feel free to change passwords and app secrets. </li>
-				</ol>
-				<pre><code class="language-bash"><span style="color: #000000">cp .env.template .env</span>
-</code></pre>
-				<ol start="3">
-					<li>Build and run the image to run the backend services.</li>
-				</ol>
-				<pre><code class="language-bash"><span style="color: #000000">docker-compose up</span>
-</code></pre>
-				<ol start="4">
-					<li>Open up an additional console and then run:</li>
-				</ol>
-				<pre><code class="language-bash"><span style="color: #000000">npm run setup:dev</span>
-<span style="color: #000000">npm run start:both</span>
-</code></pre>
-				<p>You can visit the app by going to <code>http://localhost:3000</code>.</p>
-				<a href="#demo" id="demo" style="color: inherit; text-decoration: none;">
-					<h3>Demo</h3>
-				</a>
-				<p><a href="https://dddforum.com">You can visit the site here</a>.</p>
-				<blockquote>
-					<p><code>Note</code>: It&#39;s currently deployed on free tier Heroku, which has some undesirable side-effects like shutting off the server during periods of inactivity. So if it&#39;s down for you, refresh a couple of times. Thinking about migrating this to a serverless architecture later on.</p>
-				</blockquote>
-				<a href="#technical-notes-isep" id="technical-notes-isep" style="color: inherit; text-decoration: none;">
-					<h2>Technical Notes (ISEP)</h2>
-				</a>
-				<a href="#tool-dependencies---very-important" id="tool-dependencies---very-important" style="color: inherit; text-decoration: none;">
-					<h3>Tool Dependencies - Very Important!</h3>
-				</a>
-				<p>  This project requires the following tools to be present in your system.</p>
-				<p>  <strong>Use node version 12.22.12</strong></p>
-				<p>  The use of this node version is mandatory
-				You an use <strong>nvm</strong> to manage several node version in your system (see <a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a>)</p>
-				<p>  <strong>Python</strong>
-				You may have to install <strong>python v2.7</strong> in your system (see <a href="https://www.python.org/">https://www.python.org/</a>)</p>
-				<a href="#using-the-api" id="using-the-api" style="color: inherit; text-decoration: none;">
-					<h3>Using the API</h3>
-				</a>
-				<p>Examples of using the API (without authentication, using postman)</p>
-				<ul>
-					<li><p>Get popular posts:
-						GET <a href="http://localhost:5001/api/v1/posts/popular">http://localhost:5001/api/v1/posts/popular</a></p>
-					</li>
-					<li><p>Get new posts:
-						GET <a href="http://localhost:5001/api/v1/posts/recent">http://localhost:5001/api/v1/posts/recent</a></p>
-					</li>
-					<li><p>Get post by slug:
-						GET <a href="http://localhost:5001/api/v1/posts/?slug=9526372-gosto-muito-de-dd">http://localhost:5001/api/v1/posts/?slug=9526372-gosto-muito-de-dd</a></p>
-					</li>
-					<li><p>Get comments by slug:
-						GET <a href="http://localhost:5001/api/v1/comments/?slug=9526372-gosto-muito-de-dd">http://localhost:5001/api/v1/comments/?slug=9526372-gosto-muito-de-dd</a></p>
-					</li>
-					<li><p>Login
-							POST <a href="http://localhost:5001/api/v1/users/login">http://localhost:5001/api/v1/users/login</a>
-							body:
-							{
-							&quot;username&quot;: &quot;user&quot;,
-							&quot;password&quot;: &quot;password&quot;
-							}
-							return:
-							{
-							&quot;accessToken&quot;: &quot;...&quot;,
-							&quot;refreshToken&quot;: &quot;...&quot;
-							}
-						You can then use the &quot;accessToken&quot; for actions that require authentication, by passing the value of the accessToken in a header named &quot;Authentication&quot;. For example:</p>
-					</li>
-					<li><p>Get Me
-							GET <a href="http://localhost:5001/api/v1/users/me">http://localhost:5001/api/v1/users/me</a>
-							Headers[
-							...
-							Authorization: accessToken
-							]
-							Response:
-							{
-						&quot;user&quot;: {</p>
-						<pre><code><span style="color: #A31515">&quot;username&quot;</span><span style="color: #000000">: </span><span style="color: #A31515">&quot;atb&quot;</span><span style="color: #000000">,</span>
-<span style="color: #A31515">&quot;isEmailVerified&quot;</span><span style="color: #000000">: </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #A31515">&quot;isAdminUser&quot;</span><span style="color: #000000">: </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #A31515">&quot;isDeleted&quot;</span><span style="color: #000000">: </span><span style="color: #0000FF">false</span>
-</code></pre>
-						<p>}
-						}</p>
-					</li>
-				</ul>
-				<a href="#how-to-admin-da-database" id="how-to-admin-da-database" style="color: inherit; text-decoration: none;">
-					<h3>How to Admin da database</h3>
-				</a>
-				<ul>
-					<li>open browser use localhost:8080</li>
-					<li>use:<ul>
-							<li>system: MySQL</li>
-							<li>server: mysql</li>
-							<li>username: tonysoprano</li>
-							<li>pass: 12345678</li>
-							<li>db name: data_dev</li>
-						</ul>
-					</li>
-				</ul>
-				<a href="#how-to-run-tests" id="how-to-run-tests" style="color: inherit; text-decoration: none;">
-					<h3>How to Run Tests</h3>
-				</a>
-				<p>  To run tests type: npm run test</p>
-				<p>  Existing unit tests:</p>
-				<ul>
-					<li>src/shared/core/Guard.spec.ts</li>
-					<li>src/modules/forum/domain/postSlug.spec.ts</li>
-					<li>src/modules/forum/domain/services/postService.spec.ts</li>
-				</ul>
-				<p>  The existing tests verify some services in the domain layer. The domain layer has no dependency on the other layers, so there is no need for mocking. The tests can be executed without any dependencies (e.g., database, etc.)</p>
-				<a href="#how-to-debug" id="how-to-debug" style="color: inherit; text-decoration: none;">
-					<h3>How to Debug</h3>
-				</a>
-				<ul>
-					<li>start the services with <em>docker-compose up</em></li>
-					<li>To debug the backend in VSCode go to the tab &quot;Run and Debug&quot;, select &quot;Debug TypeScript in Node.js&quot; from the dropdown list and click the play button (this will execute the configuration with the same nsame that is located in the launch.json file (<em>.vscode/launch.json</em>))</li>
-					<li>start the front-end with <em>npm run  start:public</em></li>
-					<li>open in browser: <em>localhost:3000</em></li>
-				</ul>
-				<a href="#api-tests" id="api-tests" style="color: inherit; text-decoration: none;">
-					<h3>API Tests</h3>
-				</a>
-				<p>  These tests are not part of the base project. They were added by the team to test the API. The tests are in the folder <em>src/api_test</em>.</p>
-				<p>  The tests are based on the project <a href="https://github.com/jmfiola/jest-api-test-typescript-example">https://github.com/jmfiola/jest-api-test-typescript-example</a>. <strong>The tests are executed against the running docker containers as well as the backend</strong>. These must be running. It is not necessary to execute the frontend to run these tests. The tests are executed in sequence, so they are not independent. The tests are executed in the order they are defined in the file (this is why we need to use the <em>--runInBand</em> jest option).</p>
-				<p>  Before running API tests, you must &quot;clear&quot; all the existing data and run the containers and the backend. This will ensure that the system is always at the same state when the tests area executed (i.e., an empty database). The command that runs the API tests is <em>npm run test:api</em> and it already does all the necessary steps (see the command in package.json).</p>
-				<p>  <strong>0. Add Test Report Support</strong></p>
-				<p>  npm install <a href="mailto:jest-html-reporter@3.0.0">jest-html-reporter@3.0.0</a> --save-dev</p>
-				<p>  <strong>1. Before Running Tests</strong></p>
-				<p>  Start the containers:</p>
-				<pre><code><span style="color: #001080">docker</span><span style="color: #000000">-</span><span style="color: #001080">compose</span><span style="color: #000000"> </span><span style="color: #001080">up</span>
-</code></pre>
-				<p>  Create the database:</p>
-				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> db:create:</span><span style="color: #001080">dev</span>
-<span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> migrate:</span><span style="color: #001080">dev</span><span style="color: #000000"> </span>
-</code></pre>
-				<p>  And also run the backend:</p>
-				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> start:</span><span style="color: #001080">dev</span>
-</code></pre>
-				<p>  <strong>2. Running Tests</strong></p>
-				<p>  <strong>a)</strong> To run only API tests (this will delete the database and recreate it, before running the tests; no need for step 3):</p>
-				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> test:</span><span style="color: #001080">api</span>
-</code></pre>
-				<p>  A report will be generated in report.html. Coverage report will be generated in coverage/index.html. <em>Note that coverage report only covers code of the tests, it does not cover code of teh backend executed because we called the API.</em></p>
-				<p>  <strong>b)</strong> To run only unit tests:</p>
-				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">test</span><span style="color: #000000"> -- --</span><span style="color: #001080">testPathIgnorePatterns</span><span style="color: #000000">=</span><span style="color: #001080">api</span>
-</code></pre>
-				<p>  <strong>3. After Running Tests</strong></p>
-				<p>  Stop the backend by hitting Ctrl+C in the terminal where the backend is running.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/apperror.html">App<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/createmembererrors.html">Create<wbr>Member<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/createposterrors.html">Create<wbr>Post<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/createusererrors.html">Create<wbr>User<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/deleteusererrors.html">Delete<wbr>User<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/downvotecommenterrors.html">Downvote<wbr>Comment<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/downvoteposterrors.html">Downvote<wbr>Post<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/editposterrors.html">Edit<wbr>Post<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/getcommentbycommentiderrors.html">Get<wbr>Comment<wbr>ByComment<wbr>IdErrors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/getcommentsbypostslugerrors.html">Get<wbr>Comments<wbr>ByPost<wbr>Slug<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/getmemberbyusernameerrors.html">Get<wbr>Member<wbr>ByUser<wbr>Name<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/getpostbyslugerrors.html">Get<wbr>Post<wbr>BySlug<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/getuserbyusernameerrors.html">Get<wbr>User<wbr>ByUser<wbr>Name<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/loginusecaseerrors.html">Login<wbr>Use<wbr>Case<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/logouterrors.html">Logout<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/refreshaccesstokenerrors.html">Refresh<wbr>Access<wbr>Token<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/replytocommenterrors.html">Reply<wbr>ToComment<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/replytoposterrors.html">Reply<wbr>ToPost<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/updatepoststatserrors.html">Update<wbr>Post<wbr>Stats<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/upvotecommenterrors.html">Upvote<wbr>Comment<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="modules/upvoteposterrors.html">Upvote<wbr>Post<wbr>Errors</a>
 					</li>
 				</ul>
@@ -380,7 +214,7 @@
 					<li class=" tsd-kind-class">
 						<a href="classes/comments.html" class="tsd-kind-icon">Comments</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-is-external">
 						<a href="classes/confighandler.html" class="tsd-kind-icon">Config<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -684,7 +518,16 @@
 						<a href="interfaces/commentdto.html" class="tsd-kind-icon">CommentDTO</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/commentdetailsprops.html" class="tsd-kind-icon">Comment<wbr>Details<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/commentprops.html" class="tsd-kind-icon">Comment<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/commenttextprops.html" class="tsd-kind-icon">Comment<wbr>Text<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/commentvoteprops.html" class="tsd-kind-icon">Comment<wbr>Vote<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/creatememberdto.html" class="tsd-kind-icon">Create<wbr>MemberDTO</a>
@@ -695,7 +538,7 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/createuserdto.html" class="tsd-kind-icon">Create<wbr>UserDTO</a>
 					</li>
-					<li class=" tsd-kind-interface">
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/decodedexpressrequest.html" class="tsd-kind-icon">Decoded<wbr>Express<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -768,6 +611,9 @@
 						<a href="interfaces/idomainevent.html" class="tsd-kind-icon">IDomain<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/iemailtokenprops.html" class="tsd-kind-icon">IEmail<wbr>Token<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/iguardargument.html" class="tsd-kind-icon">IGuard<wbr>Argument</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
@@ -781,6 +627,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/ipostvotesrepo.html" class="tsd-kind-icon">IPost<wbr>Votes<wbr>Repo</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iusecaseerror.html" class="tsd-kind-icon">IUse<wbr>Case<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iuserpasswordprops.html" class="tsd-kind-icon">IUser<wbr>Password<wbr>Props</a>
@@ -807,13 +656,34 @@
 						<a href="interfaces/memberdto.html" class="tsd-kind-icon">MemberDTO</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/memberdetailsprops.html" class="tsd-kind-icon">Member<wbr>Details<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/memberprops.html" class="tsd-kind-icon">Member<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/postdto.html" class="tsd-kind-icon">PostDTO</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/postdetailsprops.html" class="tsd-kind-icon">Post<wbr>Details<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/postlinkprops.html" class="tsd-kind-icon">Post<wbr>Link<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/postprops.html" class="tsd-kind-icon">Post<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/postslugprops.html" class="tsd-kind-icon">Post<wbr>Slug<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/posttextprops.html" class="tsd-kind-icon">Post<wbr>Text<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/posttitleprops.html" class="tsd-kind-icon">Post<wbr>Title<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/postvoteprops.html" class="tsd-kind-icon">Post<wbr>Vote<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/refreshaccesstokendto.html" class="tsd-kind-icon">Refresh<wbr>Access<wbr>TokenDTO</a>
@@ -846,286 +716,376 @@
 						<a href="interfaces/useremailprops.html" class="tsd-kind-icon">User<wbr>Email<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/usernameprops.html" class="tsd-kind-icon">User<wbr>Name<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/userprops.html" class="tsd-kind-icon">User<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/valueobjectprops.html" class="tsd-kind-icon">Value<wbr>Object<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/withchanges.html" class="tsd-kind-icon">With<wbr>Changes</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#createuserresponse" class="tsd-kind-icon">Create<wbr>User<wbr>Response</a>
+						<a href="globals.html#createuserresponse" class="tsd-kind-icon">Create<wbr>User<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#downvotecommentresponse" class="tsd-kind-icon">Downvote<wbr>Comment<wbr>Response</a>
+						<a href="globals.html#downvotecommentresponse" class="tsd-kind-icon">Downvote<wbr>Comment<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#downvotepostresponse" class="tsd-kind-icon">Downvote<wbr>Post<wbr>Response</a>
+						<a href="globals.html#downvotepostresponse" class="tsd-kind-icon">Downvote<wbr>Post<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#editpostresponse" class="tsd-kind-icon">Edit<wbr>Post<wbr>Response</a>
+						<a href="globals.html#editpostresponse" class="tsd-kind-icon">Edit<wbr>Post<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="modules.html#either" class="tsd-kind-icon">Either</a>
+						<a href="globals.html#either" class="tsd-kind-icon">Either</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#guardargumentcollection" class="tsd-kind-icon">Guard<wbr>Argument<wbr>Collection</a>
+						<a href="globals.html#guardargumentcollection" class="tsd-kind-icon">Guard<wbr>Argument<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#guardresponse" class="tsd-kind-icon">Guard<wbr>Response</a>
+						<a href="globals.html#guardresponse" class="tsd-kind-icon">Guard<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#jwttoken" class="tsd-kind-icon">JWTToken</a>
+						<a href="globals.html#jwttoken" class="tsd-kind-icon">JWTToken</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#posttype" class="tsd-kind-icon">Post<wbr>Type</a>
+						<a href="globals.html#posttype" class="tsd-kind-icon">Post<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#refreshtoken" class="tsd-kind-icon">Refresh<wbr>Token</a>
+						<a href="globals.html#refreshtoken" class="tsd-kind-icon">Refresh<wbr>Token</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#sessionid" class="tsd-kind-icon">Session<wbr>Id</a>
+						<a href="globals.html#response" class="tsd-kind-icon">Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#updatepostorlinkresult" class="tsd-kind-icon">Update<wbr>Post<wbr>OrLink<wbr>Result</a>
+						<a href="globals.html#sessionid" class="tsd-kind-icon">Session<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#upvotecommentresponse" class="tsd-kind-icon">Upvote<wbr>Comment<wbr>Response</a>
+						<a href="globals.html#updatepostorlinkresult" class="tsd-kind-icon">Update<wbr>Post<wbr>OrLink<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#upvotepostresponse" class="tsd-kind-icon">Upvote<wbr>Post<wbr>Response</a>
+						<a href="globals.html#upvotecommentresponse" class="tsd-kind-icon">Upvote<wbr>Comment<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#votetype" class="tsd-kind-icon">Vote<wbr>Type</a>
+						<a href="globals.html#upvotepostresponse" class="tsd-kind-icon">Upvote<wbr>Post<wbr>Response</a>
 					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
-					</li>
-					<li class=" tsd-kind-property">
-						<a href="modules.html#default" class="tsd-kind-icon">default</a>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#votetype" class="tsd-kind-icon">Vote<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#authconfig" class="tsd-kind-icon">auth<wbr>Config</a>
+						<a href="globals.html#cleardb_database_url" class="tsd-kind-icon">CLEARDB_<wbr>DATABASE_<wbr>URL</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#authservice" class="tsd-kind-icon">auth<wbr>Service</a>
+						<a href="globals.html#ddd_forum_db_dev_db_name" class="tsd-kind-icon">DDD_<wbr>FORUM_<wbr>DB_<wbr>DEV_<wbr>DB_<wbr>NAME</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#commentrepo" class="tsd-kind-icon">comment<wbr>Repo</a>
+						<a href="globals.html#ddd_forum_db_host" class="tsd-kind-icon">DDD_<wbr>FORUM_<wbr>DB_<wbr>HOST</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#commentrouter" class="tsd-kind-icon">comment<wbr>Router</a>
+						<a href="globals.html#ddd_forum_db_pass" class="tsd-kind-icon">DDD_<wbr>FORUM_<wbr>DB_<wbr>PASS</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#commentvotesrepo" class="tsd-kind-icon">comment<wbr>Votes<wbr>Repo</a>
+						<a href="globals.html#ddd_forum_db_prod_db_name" class="tsd-kind-icon">DDD_<wbr>FORUM_<wbr>DB_<wbr>PROD_<wbr>DB_<wbr>NAME</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#createmember" class="tsd-kind-icon">create<wbr>Member</a>
+						<a href="globals.html#ddd_forum_db_test_db_name" class="tsd-kind-icon">DDD_<wbr>FORUM_<wbr>DB_<wbr>TEST_<wbr>DB_<wbr>NAME</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#createpost" class="tsd-kind-icon">create<wbr>Post</a>
+						<a href="globals.html#ddd_forum_db_user" class="tsd-kind-icon">DDD_<wbr>FORUM_<wbr>DB_<wbr>USER</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#createpostcontroller" class="tsd-kind-icon">create<wbr>Post<wbr>Controller</a>
+						<a href="globals.html#ddd_forum_is_production" class="tsd-kind-icon">DDD_<wbr>FORUM_<wbr>IS_<wbr>PRODUCTION</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#createusercontroller" class="tsd-kind-icon">create<wbr>User<wbr>Controller</a>
+						<a href="globals.html#node_env" class="tsd-kind-icon">NODE_<wbr>ENV</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#createuserusecase" class="tsd-kind-icon">create<wbr>User<wbr>Use<wbr>Case</a>
+						<a href="globals.html#sequelize" class="tsd-kind-icon">Sequelize</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#deleteusercontroller" class="tsd-kind-icon">delete<wbr>User<wbr>Controller</a>
+						<a href="globals.html#accesstoken" class="tsd-kind-icon">access<wbr>Token</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#deleteuserusecase" class="tsd-kind-icon">delete<wbr>User<wbr>Use<wbr>Case</a>
+						<a href="globals.html#app" class="tsd-kind-icon">app</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#downvotecomment" class="tsd-kind-icon">downvote<wbr>Comment</a>
+						<a href="globals.html#authservice" class="tsd-kind-icon">auth<wbr>Service</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#downvotecommentcontroller" class="tsd-kind-icon">downvote<wbr>Comment<wbr>Controller</a>
+						<a href="globals.html#commentrepo" class="tsd-kind-icon">comment<wbr>Repo</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#downvotepost" class="tsd-kind-icon">downvote<wbr>Post</a>
+						<a href="globals.html#commentrouter" class="tsd-kind-icon">comment<wbr>Router</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#downvotepostcontroller" class="tsd-kind-icon">downvote<wbr>Post<wbr>Controller</a>
+						<a href="globals.html#commentvotesrepo" class="tsd-kind-icon">comment<wbr>Votes<wbr>Repo</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#export_" class="tsd-kind-icon">export&#61;</a>
+						<a href="globals.html#config" class="tsd-kind-icon">config</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getcommentbycommentid" class="tsd-kind-icon">get<wbr>Comment<wbr>ByComment<wbr>Id</a>
+						<a href="globals.html#createmember" class="tsd-kind-icon">create<wbr>Member</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getcommentbycommentidcontroller" class="tsd-kind-icon">get<wbr>Comment<wbr>ByComment<wbr>IdController</a>
+						<a href="globals.html#createpost" class="tsd-kind-icon">create<wbr>Post</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getcommentsbypostslug" class="tsd-kind-icon">get<wbr>Comments<wbr>ByPost<wbr>Slug</a>
+						<a href="globals.html#createpostcontroller" class="tsd-kind-icon">create<wbr>Post<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getcommentsbypostslugcontroller" class="tsd-kind-icon">get<wbr>Comments<wbr>ByPost<wbr>Slug<wbr>Controller</a>
+						<a href="globals.html#createusercontroller" class="tsd-kind-icon">create<wbr>User<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getcurrentmembercontroller" class="tsd-kind-icon">get<wbr>Current<wbr>Member<wbr>Controller</a>
+						<a href="globals.html#createuserusecase" class="tsd-kind-icon">create<wbr>User<wbr>Use<wbr>Case</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getcurrentusercontroller" class="tsd-kind-icon">get<wbr>Current<wbr>User<wbr>Controller</a>
+						<a href="globals.html#database" class="tsd-kind-icon">database</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getmemberbyusername" class="tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Name</a>
+						<a href="globals.html#deleteusercontroller" class="tsd-kind-icon">delete<wbr>User<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getmemberbyusernamecontroller" class="tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Name<wbr>Controller</a>
+						<a href="globals.html#deleteuserusecase" class="tsd-kind-icon">delete<wbr>User<wbr>Use<wbr>Case</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getpopularposts" class="tsd-kind-icon">get<wbr>Popular<wbr>Posts</a>
+						<a href="globals.html#dialect" class="tsd-kind-icon">dialect</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getpopularpostscontroller" class="tsd-kind-icon">get<wbr>Popular<wbr>Posts<wbr>Controller</a>
+						<a href="globals.html#dompurify" class="tsd-kind-icon">dom<wbr>Purify</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getpostbyslug" class="tsd-kind-icon">get<wbr>Post<wbr>BySlug</a>
+						<a href="globals.html#downvotecomment" class="tsd-kind-icon">downvote<wbr>Comment</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getpostbyslugcontroller" class="tsd-kind-icon">get<wbr>Post<wbr>BySlug<wbr>Controller</a>
+						<a href="globals.html#downvotecommentcontroller" class="tsd-kind-icon">downvote<wbr>Comment<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getrecentposts" class="tsd-kind-icon">get<wbr>Recent<wbr>Posts</a>
+						<a href="globals.html#downvotepost" class="tsd-kind-icon">downvote<wbr>Post</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getrecentpostscontroller" class="tsd-kind-icon">get<wbr>Recent<wbr>Posts<wbr>Controller</a>
+						<a href="globals.html#downvotepostcontroller" class="tsd-kind-icon">downvote<wbr>Post<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getuserbyusername" class="tsd-kind-icon">get<wbr>User<wbr>ByUser<wbr>Name</a>
+						<a href="globals.html#getcommentbycommentid" class="tsd-kind-icon">get<wbr>Comment<wbr>ByComment<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#getuserbyusernamecontroller" class="tsd-kind-icon">get<wbr>User<wbr>ByUser<wbr>Name<wbr>Controller</a>
+						<a href="globals.html#getcommentbycommentidcontroller" class="tsd-kind-icon">get<wbr>Comment<wbr>ByComment<wbr>IdController</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#isproduction" class="tsd-kind-icon">is<wbr>Production</a>
+						<a href="globals.html#getcommentsbypostslug" class="tsd-kind-icon">get<wbr>Comments<wbr>ByPost<wbr>Slug</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#logincontroller" class="tsd-kind-icon">login<wbr>Controller</a>
+						<a href="globals.html#getcommentsbypostslugcontroller" class="tsd-kind-icon">get<wbr>Comments<wbr>ByPost<wbr>Slug<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#loginusecase" class="tsd-kind-icon">login<wbr>Use<wbr>Case</a>
+						<a href="globals.html#getcurrentmembercontroller" class="tsd-kind-icon">get<wbr>Current<wbr>Member<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#logoutcontroller" class="tsd-kind-icon">logout<wbr>Controller</a>
+						<a href="globals.html#getcurrentusercontroller" class="tsd-kind-icon">get<wbr>Current<wbr>User<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#logoutusecase" class="tsd-kind-icon">logout<wbr>Use<wbr>Case</a>
+						<a href="globals.html#getmemberbyusername" class="tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#memberrepo" class="tsd-kind-icon">member<wbr>Repo</a>
+						<a href="globals.html#getmemberbyusernamecontroller" class="tsd-kind-icon">get<wbr>Member<wbr>ByUser<wbr>Name<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#memberrouter" class="tsd-kind-icon">member<wbr>Router</a>
+						<a href="globals.html#getpopularposts" class="tsd-kind-icon">get<wbr>Popular<wbr>Posts</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#middleware" class="tsd-kind-icon">middleware</a>
+						<a href="globals.html#getpopularpostscontroller" class="tsd-kind-icon">get<wbr>Popular<wbr>Posts<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#postrepo" class="tsd-kind-icon">post<wbr>Repo</a>
+						<a href="globals.html#getpostbyslug" class="tsd-kind-icon">get<wbr>Post<wbr>BySlug</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#postrouter" class="tsd-kind-icon">post<wbr>Router</a>
+						<a href="globals.html#getpostbyslugcontroller" class="tsd-kind-icon">get<wbr>Post<wbr>BySlug<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#postservice" class="tsd-kind-icon">post<wbr>Service</a>
+						<a href="globals.html#getrecentposts" class="tsd-kind-icon">get<wbr>Recent<wbr>Posts</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#postvotesrepo" class="tsd-kind-icon">post<wbr>Votes<wbr>Repo</a>
+						<a href="globals.html#getrecentpostscontroller" class="tsd-kind-icon">get<wbr>Recent<wbr>Posts<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#redisconnection" class="tsd-kind-icon">redis<wbr>Connection</a>
+						<a href="globals.html#getuserbyusername" class="tsd-kind-icon">get<wbr>User<wbr>ByUser<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#refreshaccesstoken" class="tsd-kind-icon">refresh<wbr>Access<wbr>Token</a>
+						<a href="globals.html#getuserbyusernamecontroller" class="tsd-kind-icon">get<wbr>User<wbr>ByUser<wbr>Name<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#refreshaccesstokencontroller" class="tsd-kind-icon">refresh<wbr>Access<wbr>Token<wbr>Controller</a>
+						<a href="globals.html#host" class="tsd-kind-icon">host</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#replytocomment" class="tsd-kind-icon">reply<wbr>ToComment</a>
+						<a href="globals.html#isproduction" class="tsd-kind-icon">is<wbr>Production</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#replytocommentcontroller" class="tsd-kind-icon">reply<wbr>ToComment<wbr>Controller</a>
+						<a href="globals.html#log" class="tsd-kind-icon">log</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#replytopost" class="tsd-kind-icon">reply<wbr>ToPost</a>
+						<a href="globals.html#logincontroller" class="tsd-kind-icon">login<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#replytopostcontroller" class="tsd-kind-icon">reply<wbr>ToPost<wbr>Controller</a>
+						<a href="globals.html#loginusecase" class="tsd-kind-icon">login<wbr>Use<wbr>Case</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#typedefs" class="tsd-kind-icon">type<wbr>Defs</a>
+						<a href="globals.html#logoutcontroller" class="tsd-kind-icon">logout<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#typedefs" class="tsd-kind-icon">type<wbr>Defs</a>
+						<a href="globals.html#logoutusecase" class="tsd-kind-icon">logout<wbr>Use<wbr>Case</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#updatecommentstats" class="tsd-kind-icon">update<wbr>Comment<wbr>Stats</a>
+						<a href="globals.html#memberrepo" class="tsd-kind-icon">member<wbr>Repo</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#updatepoststats" class="tsd-kind-icon">update<wbr>Post<wbr>Stats</a>
+						<a href="globals.html#memberrouter" class="tsd-kind-icon">member<wbr>Router</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#upvotecomment" class="tsd-kind-icon">upvote<wbr>Comment</a>
+						<a href="globals.html#middleware" class="tsd-kind-icon">middleware</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#upvotecommentcontroller" class="tsd-kind-icon">upvote<wbr>Comment<wbr>Controller</a>
+						<a href="globals.html#mode" class="tsd-kind-icon">mode</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#upvotepost" class="tsd-kind-icon">upvote<wbr>Post</a>
+						<a href="globals.html#models" class="tsd-kind-icon">models</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#upvotepostcontroller" class="tsd-kind-icon">upvote<wbr>Post<wbr>Controller</a>
+						<a href="globals.html#modelsloaded" class="tsd-kind-icon">models<wbr>Loaded</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#userrepo" class="tsd-kind-icon">user<wbr>Repo</a>
+						<a href="globals.html#password" class="tsd-kind-icon">password</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#userrouter" class="tsd-kind-icon">user<wbr>Router</a>
+						<a href="globals.html#port" class="tsd-kind-icon">port</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="modules.html#v1router" class="tsd-kind-icon">v1<wbr>Router</a>
+						<a href="globals.html#postrepo" class="tsd-kind-icon">post<wbr>Repo</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#postrouter" class="tsd-kind-icon">post<wbr>Router</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#postservice" class="tsd-kind-icon">post<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#postvotesrepo" class="tsd-kind-icon">post<wbr>Votes<wbr>Repo</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#posts" class="tsd-kind-icon">posts</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#ratelimit" class="tsd-kind-icon">rate<wbr>Limit</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#redisconnection" class="tsd-kind-icon">redis<wbr>Connection</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#refreshaccesstoken" class="tsd-kind-icon">refresh<wbr>Access<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#refreshaccesstokencontroller" class="tsd-kind-icon">refresh<wbr>Access<wbr>Token<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#refreshtoken" class="tsd-kind-icon">refresh<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#replytocomment" class="tsd-kind-icon">reply<wbr>ToComment</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#replytocommentcontroller" class="tsd-kind-icon">reply<wbr>ToComment<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#replytopost" class="tsd-kind-icon">reply<wbr>ToPost</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#replytopostcontroller" class="tsd-kind-icon">reply<wbr>ToPost<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#sequelize" class="tsd-kind-icon">sequelize</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#server" class="tsd-kind-icon">server</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#typedefs" class="tsd-kind-icon">type<wbr>Defs</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#updatecommentstats" class="tsd-kind-icon">update<wbr>Comment<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#updatepoststats" class="tsd-kind-icon">update<wbr>Post<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#upvotecomment" class="tsd-kind-icon">upvote<wbr>Comment</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#upvotecommentcontroller" class="tsd-kind-icon">upvote<wbr>Comment<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#upvotepost" class="tsd-kind-icon">upvote<wbr>Post</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#upvotepostcontroller" class="tsd-kind-icon">upvote<wbr>Post<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#userrepo" class="tsd-kind-icon">user<wbr>Repo</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#userrouter" class="tsd-kind-icon">user<wbr>Router</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#username" class="tsd-kind-icon">username</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#users" class="tsd-kind-icon">users</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#v1router" class="tsd-kind-icon">v1<wbr>Router</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#window" class="tsd-kind-icon">window</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="modules.html#createmodels" class="tsd-kind-icon">create<wbr>Models</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter">
-						<a href="modules.html#left" class="tsd-kind-icon">left</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter">
-						<a href="modules.html#right" class="tsd-kind-icon">right</a>
+						<a href="globals.html#createmodels" class="tsd-kind-icon">create<wbr>Models</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="modules.html#startgraphqlserver" class="tsd-kind-icon">start<wbr>GraphQLServer</a>
+						<a href="globals.html#dispatcheventscallback" class="tsd-kind-icon">dispatch<wbr>Events<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isentity" class="tsd-kind-icon">is<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isset" class="tsd-kind-icon">is<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#left" class="tsd-kind-icon">left</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#right" class="tsd-kind-icon">right</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#runner" class="tsd-kind-icon">runner</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#startgraphqlserver" class="tsd-kind-icon">start<wbr>GraphQLServer</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#test" class="tsd-kind-icon">test</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#tocamelcase" class="tsd-kind-icon">to<wbr>Camel<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#authconfig" class="tsd-kind-icon">auth<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#databasecredentials" class="tsd-kind-icon">database<wbr>Credentials</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#origin" class="tsd-kind-icon">origin</a>
 					</li>
 				</ul>
 			</nav>
@@ -1137,29 +1097,57 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
@@ -1169,5 +1157,6 @@
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

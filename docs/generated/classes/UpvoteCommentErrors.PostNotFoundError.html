@@ -4,17 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>PostNotFoundError | ddd-forum</title>
-	<meta name="description" content="Documentation for ddd-forum">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -41,6 +40,8 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -52,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">ddd-forum</a>
+					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/upvotecommenterrors.html">UpvoteCommentErrors</a>
@@ -72,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="usecaseerror.html" class="tsd-signature-type" data-tsd-kind="Class">UseCaseError</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="usecaseerror.html" class="tsd-signature-type">UseCaseError</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">PostNotFoundError</span>
@@ -117,14 +118,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Post<wbr>Not<wbr>Found<wbr>Error<span class="tsd-signature-symbol">(</span>commentId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="upvotecommenterrors.postnotfounderror.html" class="tsd-signature-type" data-tsd-kind="Class">PostNotFoundError</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Post<wbr>Not<wbr>Found<wbr>Error<span class="tsd-signature-symbol">(</span>commentId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="upvotecommenterrors.postnotfounderror.html" class="tsd-signature-type">PostNotFoundError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="result.html">Result</a>.<a href="result.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/modules/forum/useCases/comments/upvoteComment/UpvoteCommentErrors.ts#L23">src/modules/forum/useCases/comments/upvoteComment/UpvoteCommentErrors.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/modules/forum/useCases/comments/upvoteComment/UpvoteCommentErrors.ts#L23">src/modules/forum/useCases/comments/upvoteComment/UpvoteCommentErrors.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -133,7 +134,7 @@
 									<h5>commentId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="upvotecommenterrors.postnotfounderror.html" class="tsd-signature-type" data-tsd-kind="Class">PostNotFoundError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="upvotecommenterrors.postnotfounderror.html" class="tsd-signature-type">PostNotFoundError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -147,7 +148,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="result.html">Result</a>.<a href="result.html#isfailure">isFailure</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/core/Result.ts#L4">src/shared/core/Result.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/core/Result.ts#L4">src/shared/core/Result.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +159,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="result.html">Result</a>.<a href="result.html#issuccess">isSuccess</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/core/Result.ts#L3">src/shared/core/Result.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/core/Result.ts#L3">src/shared/core/Result.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,17 +170,17 @@
 					<a name="geterrorvalue" class="tsd-anchor"></a>
 					<h3>get<wbr>Error<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Error<wbr>Value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="usecaseerror.html" class="tsd-signature-type" data-tsd-kind="Class">UseCaseError</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Error<wbr>Value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="usecaseerror.html" class="tsd-signature-type">UseCaseError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="result.html">Result</a>.<a href="result.html#geterrorvalue">getErrorValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/core/Result.ts#L33">src/shared/core/Result.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/core/Result.ts#L33">src/shared/core/Result.ts:33</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="usecaseerror.html" class="tsd-signature-type" data-tsd-kind="Class">UseCaseError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="usecaseerror.html" class="tsd-signature-type">UseCaseError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -187,17 +188,17 @@
 					<a name="getvalue" class="tsd-anchor"></a>
 					<h3>get<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="usecaseerror.html" class="tsd-signature-type" data-tsd-kind="Class">UseCaseError</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="usecaseerror.html" class="tsd-signature-type">UseCaseError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="result.html">Result</a>.<a href="result.html#getvalue">getValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/core/Result.ts#L24">src/shared/core/Result.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/core/Result.ts#L24">src/shared/core/Result.ts:24</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="usecaseerror.html" class="tsd-signature-type" data-tsd-kind="Class">UseCaseError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="usecaseerror.html" class="tsd-signature-type">UseCaseError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -205,23 +206,23 @@
 					<a name="combine" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> combine</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">combine<span class="tsd-signature-symbol">(</span>results<span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">combine<span class="tsd-signature-symbol">(</span>results<span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="result.html">Result</a>.<a href="result.html#combine">combine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/core/Result.ts#L45">src/shared/core/Result.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/core/Result.ts#L45">src/shared/core/Result.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>results: <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>results: <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -229,14 +230,14 @@
 					<a name="fail" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> fail</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">fail&lt;U&gt;<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fail&lt;U&gt;<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="result.html">Result</a>.<a href="result.html#fail">fail</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/core/Result.ts#L41">src/shared/core/Result.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/core/Result.ts#L41">src/shared/core/Result.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -251,7 +252,7 @@
 									<h5>error: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -259,14 +260,14 @@
 					<a name="ok" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> ok</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">ok&lt;U&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ok&lt;U&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="result.html">Result</a>.<a href="result.html#ok">ok</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/72f2bc4/src/shared/core/Result.ts#L37">src/shared/core/Result.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/David-1201237/ddd-forum-odsoft/blob/d57449d/src/shared/core/Result.ts#L37">src/shared/core/Result.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -281,7 +282,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">U</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type" data-tsd-kind="Class">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="result.html" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -290,85 +291,85 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class=" ">
-						<a href="../modules.html">Exports</a>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/apperror.html">App<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/createmembererrors.html">Create<wbr>Member<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/createposterrors.html">Create<wbr>Post<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/createusererrors.html">Create<wbr>User<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/deleteusererrors.html">Delete<wbr>User<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/downvotecommenterrors.html">Downvote<wbr>Comment<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/downvoteposterrors.html">Downvote<wbr>Post<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/editposterrors.html">Edit<wbr>Post<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/getcommentbycommentiderrors.html">Get<wbr>Comment<wbr>ByComment<wbr>IdErrors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/getcommentsbypostslugerrors.html">Get<wbr>Comments<wbr>ByPost<wbr>Slug<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/getmemberbyusernameerrors.html">Get<wbr>Member<wbr>ByUser<wbr>Name<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/getpostbyslugerrors.html">Get<wbr>Post<wbr>BySlug<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/getuserbyusernameerrors.html">Get<wbr>User<wbr>ByUser<wbr>Name<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/loginusecaseerrors.html">Login<wbr>Use<wbr>Case<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/logouterrors.html">Logout<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/refreshaccesstokenerrors.html">Refresh<wbr>Access<wbr>Token<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/replytocommenterrors.html">Reply<wbr>ToComment<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/replytoposterrors.html">Reply<wbr>ToPost<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/updatepoststatserrors.html">Update<wbr>Post<wbr>Stats<wbr>Errors</a>
 					</li>
-					<li class="current tsd-kind-namespace">
+					<li class="current tsd-kind-module">
 						<a href="../modules/upvotecommenterrors.html">Upvote<wbr>Comment<wbr>Errors</a>
 					</li>
-					<li class=" tsd-kind-namespace">
+					<li class=" tsd-kind-module">
 						<a href="../modules/upvoteposterrors.html">Upvote<wbr>Post<wbr>Errors</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="upvotecommenterrors.commentnotfounderror.html" class="tsd-kind-icon">Comment<wbr>Not<wbr>Found<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="upvotecommenterrors.membernotfounderror.html" class="tsd-kind-icon">Member<wbr>Not<wbr>Found<wbr>Error</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="upvotecommenterrors.postnotfounderror.html" class="tsd-kind-icon">Post<wbr>Not<wbr>Found<wbr>Error</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
@@ -409,29 +410,57 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
@@ -441,5 +470,6 @@
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
